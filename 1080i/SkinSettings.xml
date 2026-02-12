@@ -324,13 +324,13 @@
 
                             <include content="Dialog_Settings_Label" description="Codec logos">
                                 <param name="id">2363</param>
-                                <label>$LOCALIZE[32063]</label>
+                                <label>$LOCALIZE[31963]</label>
                                 <visible>Container(3).HasFocus(2)</visible>
                             </include>
                             <include content="Dialog_Settings_Button">
                                 <param name="id">2369</param>
                                 <param name="control" value="button" />
-                                <label>$LOCALIZE[32071]</label>
+                                <label>$LOCALIZE[31971]</label>
                                 <visible>Container(3).HasFocus(2)</visible>
                                 <onclick condition="!Skin.HasSetting(osd.useOneSecondCodecLogos) + !Skin.HasSetting(osd.useTwoSecondsCodecLogos) + !Skin.HasSetting(osd.useThreeSecondsCodecLogos) + !Skin.HasSetting(osd.useFourSecondsCodecLogos) + !Skin.HasSetting(osd.useFiveSecondsCodecLogos) + !Skin.HasSetting(osd.useSixSecondsCodecLogos) + !Skin.HasSetting(osd.useSevenSecondsCodecLogos) + !Skin.HasSetting(osd.useEightSecondsCodecLogos) + !Skin.HasSetting(osd.useNineSecondsCodecLogos) + !Skin.HasSetting(osd.useTenSecondsCodecLogos) + !Skin.HasSetting(osd.useElevenSecondsCodecLogos) + !Skin.HasSetting(osd.useTwelveSecondsCodecLogos) + !Skin.HasSetting(osd.useThirteenSecondsCodecLogos) + !Skin.HasSetting(osd.useFourteenSecondsCodecLogos) + !Skin.HasSetting(osd.useFifteenSecondsCodecLogos)">Skin.ToggleSetting(osd.useSixSecondsCodecLogos)</onclick>
                                 <onclick condition="Skin.HasSetting(osd.useFiveSecondsCodecLogos)">Skin.ToggleSetting(osd.useSixSecondsCodecLogos)</onclick>
@@ -367,7 +367,7 @@
                             <include content="Dialog_Settings_Button">
                                 <param name="id">2368</param>
                                 <param name="control" value="button" />
-                                <label>$LOCALIZE[32062]</label>
+                                <label>$LOCALIZE[31962]</label>
                                 <visible>Container(3).HasFocus(2)</visible>
                                 <onclick condition="!Skin.HasSetting(osd.useleftCodecStartupLogos) + !Skin.HasSetting(osd.usecenterCodecStartupLogos) + !Skin.HasSetting(osd.userightCodecStartupLogos)">Skin.ToggleSetting(osd.useleftCodecStartupLogos)</onclick>
                                 <onclick condition="Skin.HasSetting(osd.useleftCodecStartupLogos)">Skin.ToggleSetting(osd.usecenterCodecStartupLogos)</onclick>
@@ -380,7 +380,7 @@
                             <include content="Dialog_Settings_Button">
                                 <param name="id">2367</param>
                                 <param name="control" value="button" />
-                                <label>$LOCALIZE[32060]</label>
+                                <label>$LOCALIZE[31960]</label>
                                 <visible>Container(3).HasFocus(2)</visible>
                                 <onclick condition="!Skin.HasSetting(osd.useleftCodecLogos) + !Skin.HasSetting(osd.usecenterCodecLogos) + !Skin.HasSetting(osd.userightCodecLogos)">Skin.ToggleSetting(osd.useleftCodecLogos)</onclick>
                                 <onclick condition="Skin.HasSetting(osd.useleftCodecLogos)">Skin.ToggleSetting(osd.usecenterCodecLogos)</onclick>
@@ -393,7 +393,7 @@
                             <include content="Dialog_Settings_Button">
                                 <param name="id">2362</param>
                                 <param name="control" value="button" />
-                                <label>$LOCALIZE[32061]</label>
+                                <label>$LOCALIZE[31961]</label>
                                 <visible>Container(3).HasFocus(2)</visible>
                                 <onclick condition="!Skin.HasSetting(ppi.useleftCodecLogos) + !Skin.HasSetting(ppi.usecenterCodecLogos) + !Skin.HasSetting(ppi.userightCodecLogos)">Skin.ToggleSetting(ppi.useleftCodecLogos)</onclick>
                                 <onclick condition="Skin.HasSetting(ppi.useleftCodecLogos)">Skin.ToggleSetting(ppi.usecenterCodecLogos)</onclick>

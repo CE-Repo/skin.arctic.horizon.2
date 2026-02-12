@@ -12,7 +12,7 @@
             <centertop>50%</centertop>
             <centerleft>50%</centerleft>
             <include content="Object_MenuHeader">
-                <param name="label">$LOCALIZE[32065]</param>
+                <param name="label">$LOCALIZE[31965]</param>
             </include>
             <include content="Object_Control">
                 <param name="control" value="grouplist" />
@@ -26,7 +26,7 @@
                 <include content="Dialog_Settings_Button">
                     <param name="id" value="9034" />
                     <param name="control" value="button" />
-                    <label>$LOCALIZE[32064]</label>
+                    <label>$LOCALIZE[31964]</label>
                     <selected>Integer.IsEqual(Player.Process(amlogic.vs10.mode.raw),5) | [[Integer.IsEqual(Player.Process(amlogic.vs10.mode.raw),0) | Integer.IsEqual(Player.Process(amlogic.vs10.mode.raw),1)] + String.Contains(Player.Process(video.hdr.type),Dolby)]</selected>
                     <onclick>Action(vs10.original)</onclick>
                     <onclick>Dialog.Close(1180)</onclick>
