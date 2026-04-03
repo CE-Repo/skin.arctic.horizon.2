@@ -169,12 +169,12 @@
                 </control>
             </control>
 
-            <!-- Group: More -->
+            <!-- Group: Processing -->
             <control type="group">
                 <top>300</top>
                 <left>30</left>
 				
-                <!-- More Icon -->
+                <!-- Processing Icon -->
                 <control type="label">
                     <label></label>
                     <top>-15</top>
@@ -191,7 +191,7 @@
                     <textcolor>ppi_dialog_fg_100</textcolor>
                 </control>
 				
-                <!-- VS10 | CMv4 | VP -->
+                <!-- VS10 | VP mode -->
                 <control type="label">
                     <top>20</top>
                     <label>$LOCALIZE[31906]:</label>
@@ -213,19 +213,6 @@
                 </control>
                 <control type="label">
                     <left>275</left>
-                    <top>21</top>
-                    <label>$VAR[CMModeVar]</label>
-                    <font>font_tiny_iconic</font>
-                </control>
-                <control type="label">
-                    <top>20</top>
-                    <left>315</left>
-                    <label>|</label>
-                    <font>font_tiny1</font>
-                    <textcolor>ppi_dialog_fg_90</textcolor>
-                </control>
-                <control type="label">
-                    <left>339</left>
                     <top>21</top>
                     <label>$VAR[VideoVPModeVar]</label>
                     <font>font_tiny_iconic</font>
@@ -845,12 +832,12 @@
                 </control>
             </control>
 
-            <!-- Group: DV Configuration -->
+            <!-- Group: Dolby Vision -->
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.dovi.has.config),1)</visible>
                 <left>1355</left>
 				
-                <!-- DV Configuration Icon -->
+                <!-- Dolby Vision Icon -->
                 <control type="label">
                     <label></label>
                     <top>-15</top>
@@ -858,7 +845,7 @@
                     <textcolor>ppi_dialog_fg_100</textcolor>
                 </control>
 				
-                <!-- DV Configuration -->
+                <!-- Dolby Vision -->
                 <control type="label">
                     <label>[B][UPPERCASE]$LOCALIZE[31937][/UPPERCASE][/B]</label>
                     <top>-15</top>
@@ -1000,7 +987,7 @@
                     <visible>!String.IsEqual(Player.Process(video.source.dovi.profile),0)</visible>
                 </control>
 				
-                <!-- Enhancement Layer Type -->
+                <!-- CMv2.9 to CMv4.0 -->
                 <control type="label">
                     <top>230</top>
                     <label>$LOCALIZE[31921]:</label>
@@ -1008,32 +995,15 @@
                     <textcolor>ppi_dialog_fg_90</textcolor>
                 </control>
                 <control type="label">
-                    <left>335</left>
-                    <top>230</top>
-                    <label>$VAR[DVELVar]</label>
-                    <font>font_tiny1</font>
-                    <textcolor>ppi_dialog_fg_90</textcolor>
-                </control>
-                <control type="label">
                     <left>341</left>
                     <top>230</top>
-                    <label>$VAR[DVELVar1]</label>
+                    <label>$VAR[CMModeVar]</label>
                     <font>font_tiny_iconic</font>
                     <textcolor>ppi_dialog_fg_90</textcolor>
-                    <visible>!String.Contains(Player.Process(video.dovi.el.type),minimum)</visible>
-                    <visible>!String.Contains(Player.Process(video.dovi.el.type),full)</visible>
-                </control>
-                <control type="label">
-                    <left>410</left>
-                    <top>230</top>
-                    <label>$VAR[ELSourcePresentVar]</label>
-                    <font>font_tiny_iconic</font>
-                    <visible>!String.IsEqual(Player.Process(video.source.dovi.el.type),Player.Process(video.dovi.el.type))</visible>
-                    <visible>!String.IsEqual(Player.Process(video.source.dovi.profile),0)</visible>
                 </control>
             </control>
 
-            <!-- Group: DV Levels Metadata + Without L5 Active Offsets -->
+            <!-- Group: Metadata + Without L5 Active Offsets -->
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.dovi.has.config),1)</visible>
                 <visible>String.IsEqual(Player.Process(video.dovi.has.header),1)</visible>
@@ -1041,7 +1011,7 @@
                 <top>300</top>
                 <left>1355</left>
 				
-                <!-- DV Levels Metadata Icon -->
+                <!-- Metadata Icon -->
                 <control type="label">
                     <label></label>
                     <top>-15</top>
@@ -1049,9 +1019,9 @@
                     <textcolor>ppi_dialog_fg_100</textcolor>
                 </control>
 				
-                <!-- DV Levels Metadata -->
+                <!-- Metadata -->
                 <control type="label">
-                    <label>[B][UPPERCASE]$LOCALIZE[31938][/UPPERCASE][/B]</label>
+                    <label>[B][UPPERCASE]$LOCALIZE[31922][/UPPERCASE][/B]</label>
                     <top>-15</top>
                     <left>30</left>
                     <font>font_tiny1</font>
@@ -1209,7 +1179,7 @@
                 </control>
             </control>
 
-            <!-- Group: DV Levels Metadata + With L5 Active Offsets -->
+            <!-- Group: Metadata + With L5 Active Offsets -->
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.dovi.has.config),1)</visible>
                 <visible>String.IsEqual(Player.Process(video.dovi.has.header),1)</visible>
@@ -1217,7 +1187,7 @@
                 <top>300</top>
                 <left>1355</left>
 				
-                <!-- DV Levels Metadata Icon -->
+                <!-- Metadata Icon -->
                 <control type="label">
                     <label></label>
                     <top>-15</top>
@@ -1225,9 +1195,9 @@
                     <textcolor>ppi_dialog_fg_100</textcolor>
                 </control>
 				
-                <!-- DV Levels Metadata -->
+                <!-- Metadata -->
                 <control type="label">
-                    <label>[B][UPPERCASE]$LOCALIZE[31938][/UPPERCASE][/B]</label>
+                    <label>[B][UPPERCASE]$LOCALIZE[31922][/UPPERCASE][/B]</label>
                     <top>-15</top>
                     <left>30</left>
                     <font>font_tiny1</font>
